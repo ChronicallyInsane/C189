@@ -9,6 +9,12 @@ class FunctionTestCase(unittest.Testcase):
 if __name__ == '_main__':
     unittest.main()
 
+def test_age():
+    assertEquals(convert_to_months(2),24)
+    assertEquals(convert_to_months(5),60)
+    assertFalse(convert_to_months(-2),24)
+    assertRaises(convert_to_months("string")
+
 
 
 
