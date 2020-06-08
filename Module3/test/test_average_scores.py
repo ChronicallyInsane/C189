@@ -14,4 +14,5 @@ def test_average(self):
         assert average_scores.average() == 90
     with mock.patch('buildins.input', side_effects=[42, 25, 56]):
         assert average_scores.average() == 41
-
+    with mock.patch('buildins.input', side_effects=[95, 25, 56]):
+        assert average_scores.average() == 41
