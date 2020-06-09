@@ -16,7 +16,9 @@ class MyTestCase(unittest.TestCase):
         unittest.assertEquals(calculate_price(30,10,50),10)
 
     def test_price_under_between_thirty_fifty(self):
-        pass
+        unittest.assertEquals(calculate_price(35,20,30),10.5)
+        unittest.assertEquals(calculate_price(40,10,40),18)
+        unittest.assertEquals(calculate_price(49,48,50),0.5)
 
     def test_price_under_over_fifty(self):
         pass
