@@ -21,7 +21,9 @@ class MyTestCase(unittest.TestCase):
         unittest.assertEquals(calculate_price(49,48,50),0.5)
 
     def test_price_under_over_fifty(self):
-        pass
+        unittest.assertEquals(calculate_price(50,25,50),12.5)
+        unittest.assertEquals(calculate_price(100,50,10),45)
+        unittest.assertEquals(calculate_price(90,50,10),36)
 
 
 if __name__ == '__main__':
