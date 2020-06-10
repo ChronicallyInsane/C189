@@ -1,30 +1,40 @@
+"""
+Author: Evan
+Purpose: test coupon calc
+date: 6/9
+
+"""
+
 import unittest
 from Module4.store.coupon_calculations import calculate_price
 
 
 class MyTestCase(unittest.TestCase):
     def test_price_under_ten(self):
-        unittest.assertEquals(calculate_price(8,5,10),2.7)
-        unittest.assertEquals(calculate_price(9,4,15),2.5)
-        unittest.assertEquals(calculate_price(6,5,20),0.8)
-        unittest.assertEquals(calculate_price(9,10,10),-1.2)
+        self.assertAlmostEqual(calculate_price(8.0, 5.0, 10.0), 2.7)
+        self.assertAlmostEqual(calculate_price(9.0, 4.0, 15.0), 2.5)
+        self.assertAlmostEqual(calculate_price(6.0, 5.0, 20.0), 0.8)
+        self.assertAlmostEqual(calculate_price(9.0, 10.0, 10.0), -0.9)
 
     def test_price_under_between_ten_thirty(self):
-        unittest.assertEquals(calculate_price(10,5,10),4.5)
-        unittest.assertEquals(calculate_price(12,6,15),5.1)
-        unittest.assertEquals(calculate_price(15,1,20),11.2)
-        unittest.assertEquals(calculate_price(30,10,50),10)
+        self.assertAlmostEqual(calculate_price(10.0, 5.0, 10.0), 4.5)
+        self.assertAlmostEqual(calculate_price(12.0, 6.0, 15.0), 5.1)
+        self.assertAlmostEqual(calculate_price(15.0, 1.0, 20.0), 11.2)
+        self.assertAlmostEqual(calculate_price(30.0, 10.0, 50.0), 10.0)
 
     def test_price_under_between_thirty_fifty(self):
-        unittest.assertEquals(calculate_price(35,20,30),10.5)
-        unittest.assertEquals(calculate_price(40,10,40),18)
-        unittest.assertEquals(calculate_price(49,48,50),0.5)
+        self.assertAlmostEqual(calculate_price(35.0, 20.0, 30.0), 10.5)
+        self.assertAlmostEqual(calculate_price(40.0, 10.0, 40.0), 18.0)
+        self.assertAlmostEqual(calculate_price(49.0, 48.0, 50.0), 0.5)
 
     def test_price_under_over_fifty(self):
-        unittest.assertEquals(calculate_price(50,25,50),12.5)
-        unittest.assertEquals(calculate_price(100,50,10),45)
-        unittest.assertEquals(calculate_price(90,50,10),36)
+        self.assertAlmostEqual(calculate_price(50, 25, 50), 12.5)
+        self.assertAlmostEqual(calculate_price(100, 50, 10), 45)
+        self.assertAlmostEqual(calculate_price(90, 50, 10), 36)
 
 
 if __name__ == '__main__':
     unittest.main()
+"""
+Errors: function returns total PLUS the shipping, thus throwing tests off.  this has been fixed.
+"""
