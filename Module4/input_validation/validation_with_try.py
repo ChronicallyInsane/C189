@@ -2,7 +2,12 @@ import Module3.format_output.average_scores
 
 
 def main():
-    average(-1, 3, 4)
+    try:
+        avg = average(-70, 90, 100)
+        print("average score is: ", avg)
+    except ValueError:
+        print("input valid scores")
+        exit()
 
 
 def average(one, two, three):
@@ -12,8 +17,8 @@ def average(one, two, three):
     else:
         total = one + two + three
     NUM_TESTS = 3
-    return (total / NUM_TESTS)
+    return total / NUM_TESTS
 
 
-if __name__ == '__main))':
+if __name__ == '__main__':
     main()
