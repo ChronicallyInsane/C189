@@ -43,8 +43,8 @@ def score_input(test_name, test_score=0, invalid_message="Invalid Test Score, pl
         if tries == 0:
             raise ValueError(invalid_message)
             exit(-1)
-
-    return test_name, ": ", test_score
+    result = test_name+": ",test_score
+    return result
 
 
 if __name__ == '__main__':
