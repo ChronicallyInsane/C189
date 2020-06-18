@@ -8,7 +8,7 @@ class MyTestCase(ut.TestCase):
         self.assertEqual(ifa.measurements([2.1, 3.4]), "Perimeter = 11.0 Area = 7.14")
 
     def test_measurements_square(self):
-        self.assertEqual(ifa .measurements([3.5]), "Perimeter = 14.0 Area = 12.25")
+        self.assertEqual(ifa .measurements([3.5]),  -1)
 
 
 if __name__ == '__main__':
