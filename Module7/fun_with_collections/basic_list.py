@@ -16,17 +16,13 @@ def main():
             exit(1)
 
 
-def make_list(list = 0):
+def make_list(list = []):
     """
     @:name max_list
     @:param none
     @:returns user input or -1 depending on error level
     """
-    if list == 0:
-        pass
-    else:
-        MAX = len(list)
-        return list
+
     print("max list size?")
     MAX = int(input())
     print(MAX)
