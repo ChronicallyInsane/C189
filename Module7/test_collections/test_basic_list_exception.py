@@ -16,6 +16,8 @@ class TestList(unittest.TestCase):
     def test_make_list_below_range(self, input):
         self.assertRaises(basic_list_exception.make_list(), [-1, 5, 10])
 
+    def test_make_list_above_range(self, input):
+        self.assertRaises(basic_list_exception.make_list(), [51, 5, 10])
 
 
 if __name__ == '__main__':
