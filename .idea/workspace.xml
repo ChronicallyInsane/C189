@@ -19,20 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="added search and sort + passing tests">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/C189.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/iodemonstration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/keyword.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/sort_and_search_array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/student_info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/testscores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module7/test_collections/test_sort_and_search_array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module8/__init__.py" afterDir="false" />
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="Module8">
+      <change afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/set_membership.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/test/test_set_membership.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +39,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dg1Bludct0LKLVip9YdTwmdGvU" />
@@ -68,7 +66,7 @@
       <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_sort_and_search_array.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_set_membership.py">
     <configuration name="keyword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +130,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_set_membership.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module8/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Module8/test/test_set_membership.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_sort_and_search_array.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,6 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_set_membership.py" />
         <item itemvalue="Python tests.Unittests in test_sort_and_search_array.py" />
         <item itemvalue="Python.sort_and_search_array" />
         <item itemvalue="Python.keyword" />
@@ -187,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592838762780</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Module8">
+      <created>1593027765232</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593027765232</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +226,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added basic_list_exception.py&#10;added tests" />
     <MESSAGE value="added search and sort + passing tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added search and sort + passing tests" />
+    <MESSAGE value="Module8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl" timestamp="1593027555448">
@@ -245,10 +266,22 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556947" />
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593027463813">
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593027678552">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593027463813" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593027678552" />
+    <state x="468" y="155" key="git4idea.merge.GitMergeDialog" timestamp="1593027654098">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="468" y="155" key="git4idea.merge.GitMergeDialog/0.0.1366.731@0.0.1366.731" timestamp="1593027654098" />
+    <state x="386" y="155" width="588" height="423" key="git4idea.merge.GitPullDialog" timestamp="1593027637073">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="386" y="155" width="588" height="423" key="git4idea.merge.GitPullDialog/0.0.1366.731@0.0.1366.731" timestamp="1593027637073" />
+    <state x="483" y="266" width="394" height="200" key="git4idea.ui.GitStashDialog" timestamp="1593027630339">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="483" y="266" width="394" height="200" key="git4idea.ui.GitStashDialog/0.0.1366.731@0.0.1366.731" timestamp="1593027630339" />
     <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1593020313620">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
