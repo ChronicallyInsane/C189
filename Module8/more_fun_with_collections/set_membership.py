@@ -3,8 +3,8 @@ def main():
 
 
 def in_set(my_set, value):
-    for i in range(0, len(my_set)):
-        if value == my_set[i]:
+    for i in my_set:
+        if value == i:
             return True
     return False
 
