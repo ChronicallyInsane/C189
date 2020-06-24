@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="added search and sort + passing tests">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/C189.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/iodemonstration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/keyword.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/sort_and_search_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/student_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/fun_with_collections/testscores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module7/test_collections/test_sort_and_search_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dg1Bludct0LKLVip9YdTwmdGvU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in test_sort_and_search_array.py">
+    <configuration name="keyword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/fun_with_collections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module7/fun_with_collections/keyword.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sort_and_search_array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/fun_with_collections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module7/fun_with_collections/sort_and_search_array.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sort_and_search_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/fun_with_collections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module7/fun_with_collections/sort_and_search_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_sort_and_search_array.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/test_collections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Module7/test_collections/test_sort_and_search_array.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_sort_and_search_array.py" />
+        <item itemvalue="Python.sort_and_search_array" />
+        <item itemvalue="Python.keyword" />
+        <item itemvalue="Python.sort_and_search_list" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="" />
+      <created>1592831788984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592831788984</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added basic_list_exception.py&#10;added tests">
+      <created>1592834357098</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592834357098</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added basic_list_exception.py&#10;added tests">
+      <created>1592834410424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592834410424</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added search and sort + passing tests">
+      <created>1592838762780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592838762780</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added basic_list_exception.py&#10;added tests" />
+    <MESSAGE value="added search and sort + passing tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search and sort + passing tests" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl" timestamp="1593027555448">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
+    <state width="1343" height="215" key="GridCell.Tab.0.bottom" timestamp="1593027556944">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593027556944" />
+    <state width="1343" height="215" key="GridCell.Tab.0.center" timestamp="1593027556942">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593027556942" />
+    <state width="1343" height="215" key="GridCell.Tab.0.left" timestamp="1593027556941">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593027556941" />
+    <state width="1343" height="215" key="GridCell.Tab.0.right" timestamp="1593027556943">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556943" />
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593027556948">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593027556948" />
+    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1593027556946">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1593027556946" />
+    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1593027556945">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1593027556945" />
+    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1593027556947">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556947" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593027463813">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593027463813" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1593020313620">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1593020313620" />
+  </component>
+</project>
