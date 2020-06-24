@@ -1,3 +1,10 @@
+"""
+Author: Evan
+Date: 6/23
+Purpose: learning about Sets
+"""
+
+
 def main():
     pass
 
