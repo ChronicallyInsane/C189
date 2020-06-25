@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="tests pass">
-      <change afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/dict_membership.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module8/test/test_dict_membership.py" afterDir="false" />
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="dict in module 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/more_fun_with_collections/dict_membership.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/dict_membership.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_dict_membership.py">
+  <component name="RunManager" selected="Python.dict_membership">
     <configuration name="dict_membership" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_dict_membership.py" />
         <item itemvalue="Python.dict_membership" />
+        <item itemvalue="Python tests.Unittests in test_dict_membership.py" />
         <item itemvalue="Python tests.Unittests in test_set_membership.py" />
         <item itemvalue="Python tests.Unittests in test_sort_and_search_array.py" />
         <item itemvalue="Python.sort_and_search_array" />
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593029231842</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dict in module 8">
+      <created>1593046301451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593046301451</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,29 +247,30 @@
     <MESSAGE value="Module8" />
     <MESSAGE value="set testing" />
     <MESSAGE value="tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests pass" />
+    <MESSAGE value="dict in module 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="dict in module 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl" timestamp="1593027555448">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1593045558214">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1593101211736">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
-    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1593045558214">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593101211736" />
+    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1593101211734">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
-    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1593045558214">
+    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593101211734" />
+    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1593101211733">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
-    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1593045558214">
+    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593101211732" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1593101211735">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593101211735" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593027556948">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -280,10 +287,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556947" />
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593029236107">
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593046316880">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593029236107" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593046316880" />
     <state x="476" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593029164920">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -300,9 +307,9 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="483" y="266" width="394" height="200" key="git4idea.ui.GitStashDialog/0.0.1366.731@0.0.1366.731" timestamp="1593027630339" />
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1593020313620">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1593099599353">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1593020313620" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1593099599353" />
   </component>
 </project>
