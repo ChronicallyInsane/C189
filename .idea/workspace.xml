@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="set testing">
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="tests pass">
+      <change afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/dict_membership.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/test/test_dict_membership.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module8/test/test_set_membership.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/test/test_set_membership.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +64,8 @@
       <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_set_membership.py">
-    <configuration name="keyword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in test_dict_membership.py">
+    <configuration name="dict_membership" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,11 +73,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/fun_with_collections" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module8/more_fun_with_collections" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module7/fun_with_collections/keyword.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module8/more_fun_with_collections/dict_membership.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,25 +107,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sort_and_search_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_dict_membership.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/fun_with_collections" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module8/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module7/fun_with_collections/sort_and_search_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Module8/test/test_dict_membership.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_set_membership.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -157,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_dict_membership.py" />
+        <item itemvalue="Python.dict_membership" />
         <item itemvalue="Python tests.Unittests in test_set_membership.py" />
         <item itemvalue="Python tests.Unittests in test_sort_and_search_array.py" />
         <item itemvalue="Python.sort_and_search_array" />
-        <item itemvalue="Python.keyword" />
-        <item itemvalue="Python.sort_and_search_list" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593028843233</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tests pass">
+      <created>1593029155177</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593029155177</updated>
+    </task>
+    <task id="LOCAL-00007" summary="tests pass">
+      <created>1593029231842</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593029231842</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,29 +240,30 @@
     <MESSAGE value="added search and sort + passing tests" />
     <MESSAGE value="Module8" />
     <MESSAGE value="set testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="set testing" />
+    <MESSAGE value="tests pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests pass" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl" timestamp="1593027555448">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="215" key="GridCell.Tab.0.bottom" timestamp="1593027556944">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1593045558214">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593027556944" />
-    <state width="1343" height="215" key="GridCell.Tab.0.center" timestamp="1593027556942">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
+    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1593045558214">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593027556942" />
-    <state width="1343" height="215" key="GridCell.Tab.0.left" timestamp="1593027556941">
+    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
+    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1593045558214">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593027556941" />
-    <state width="1343" height="215" key="GridCell.Tab.0.right" timestamp="1593027556943">
+    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1593045558214">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556943" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593045558214" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593027556948">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -271,10 +280,14 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1593027556947" />
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593028892602">
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593029236107">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593028892602" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1593029236107" />
+    <state x="476" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593029164920">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="476" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.731@0.0.1366.731" timestamp="1593029164920" />
     <state x="468" y="155" key="git4idea.merge.GitMergeDialog" timestamp="1593027654098">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
