@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="still buggy">
-      <change afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/assign_average.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module8/test/test_assign_average.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/more_fun_with_collections/assign_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/assign_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/test/test_assign_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/test/test_assign_average.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.assign_average">
+  <component name="RunManager" selected="Python tests.Unittests in test_assign_average.py">
     <configuration name="assign_average" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,6 +107,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_assign_average.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module8/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Module8/test/test_assign_average.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_dict_membership.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,27 +149,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_sort_and_search_array.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="C189" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module7/test_collections" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Module7/test_collections/test_sort_and_search_array.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_assign_average.py" />
         <item itemvalue="Python.assign_average" />
         <item itemvalue="Python.dict_membership" />
         <item itemvalue="Python tests.Unittests in test_dict_membership.py" />
         <item itemvalue="Python tests.Unittests in test_set_membership.py" />
-        <item itemvalue="Python tests.Unittests in test_sort_and_search_array.py" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593103179824</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="still buggy">
+      <created>1593272067127</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593272067127</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,22 +279,22 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1593272029826">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1593272248229">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593272029826" />
-    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1593272029825">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593272248229" />
+    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1593272248228">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593272029825" />
-    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1593272029824">
+    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593272248228" />
+    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1593272248227">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593272029824" />
-    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1593272029826">
+    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593272248227" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1593272248229">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593272029826" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593272248229" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593101424847">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
