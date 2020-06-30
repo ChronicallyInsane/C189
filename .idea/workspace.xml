@@ -19,20 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="date">
-      <change afterPath="$PROJECT_DIR$/Module9/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/definitions.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/definitions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/definitions/dictionary_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/definitions/greeting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/definitions/set_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/my_definitions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/requestResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module9/test_module.py" afterDir="false" />
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="assortment of test modules">
+      <change afterPath="$PROJECT_DIR$/Module9/GUI/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module9/GUI/myLittleGUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module8/more_fun_with_collections/timedatectl.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/more_fun_with_collections/timedatectl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module8/test/test_half_birthday.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/test/test_half_birthday.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593273722383</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="assortment of test modules">
+      <created>1593539761771</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593539761772</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +309,8 @@
     <MESSAGE value="still buggy" />
     <MESSAGE value="tests finished" />
     <MESSAGE value="date" />
-    <option name="LAST_COMMIT_MESSAGE" value="date" />
+    <MESSAGE value="assortment of test modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="assortment of test modules" />
   </component>
   <component name="WindowStateProjectService">
     <state x="98" y="100" width="1170" height="533" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593273951600">
@@ -323,22 +321,22 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="650" height="169" key="GridCell.Tab.0.bottom" timestamp="1593539657859">
+    <state width="916" height="169" key="GridCell.Tab.0.bottom" timestamp="1593540495782">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="650" height="169" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593539657859" />
-    <state width="650" height="169" key="GridCell.Tab.0.center" timestamp="1593539657858">
+    <state width="916" height="169" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1593540495782" />
+    <state width="916" height="169" key="GridCell.Tab.0.center" timestamp="1593540495779">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="650" height="169" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593539657858" />
-    <state width="650" height="169" key="GridCell.Tab.0.left" timestamp="1593539657857">
+    <state width="916" height="169" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1593540495779" />
+    <state width="916" height="169" key="GridCell.Tab.0.left" timestamp="1593540495779">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="650" height="169" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593539657857" />
-    <state width="650" height="169" key="GridCell.Tab.0.right" timestamp="1593539657859">
+    <state width="916" height="169" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1593540495778" />
+    <state width="916" height="169" key="GridCell.Tab.0.right" timestamp="1593540495780">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="650" height="169" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593539657859" />
+    <state width="916" height="169" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1593540495780" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593275834013">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
