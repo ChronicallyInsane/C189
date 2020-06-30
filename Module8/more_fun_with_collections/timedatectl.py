@@ -1,3 +1,10 @@
+"""
+Author: Evan
+Date: Not in time
+Purpose: Testing datetime functions
+"""
+
+
 from datetime import datetime, timedelta
 
 def main():

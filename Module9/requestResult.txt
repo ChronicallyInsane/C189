@@ -1,0 +1,1 @@
+b'<html><head><meta http-equiv="refresh" content="0; url=/webapps/login/" /></head></html>\n'
