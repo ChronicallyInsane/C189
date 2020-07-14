@@ -34,9 +34,14 @@ class Employee:
         self.salary = sal
 
     def display(self):
-        print(self.last_name+" "+self.first_name, "\n", self.address, )
+        print(self.last_name + " " + self.first_name, "\n", self.address, "\n")
+        if self.salaried:
+            print("Salaried Employee: ", self.salary, "/year\n", "Start Date: ", self.start_date)
+        else:
+            print("Hourly Employee: ", self.salary, "/hour\n", "Start Date: ", self.start_date)
 
-# emp = Employee('Ruiz', 'Matthew')   # call the construtor, needs to have a first and last name in parameter
-# emp.change_first_name('Matt')
-# print(emp.display())                # display returns a str, so print the information
-# del emp                             # clean up!
+
+emp = Employee('Ruiz', 'Matthew')  # call the construtor, needs to have a first and last name in parameter
+emp.set_first_name('Matt')
+print(emp.display())  # display returns a str, so print the information
+del emp  # clean up!

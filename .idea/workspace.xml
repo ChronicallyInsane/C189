@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="BUTTONS">
-      <change afterPath="$PROJECT_DIR$/Module10/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module10/class_definitions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module10/class_definitions/employee.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module10/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module10/class_definitions/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module10/class_definitions/employee.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +65,8 @@
       <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.myLittleGUI">
-    <configuration name="assign_average" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.employee">
+    <configuration name="employee" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module8/more_fun_with_collections" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module10/class_definitions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module8/more_fun_with_collections/assign_average.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module10/class_definitions/employee.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.employee" />
         <item itemvalue="Python.myLittleGUI" />
         <item itemvalue="Python.scraper" />
         <item itemvalue="Python tests.Unittests in test_half_birthday.py" />
         <item itemvalue="Python tests.Unittests in test_assign_average.py" />
-        <item itemvalue="Python.assign_average" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593541269171</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="BUTTONS">
+      <created>1594744552209</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594744552209</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
