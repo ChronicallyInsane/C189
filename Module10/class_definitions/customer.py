@@ -1,13 +1,13 @@
 class Customer:
-    def __init__(self, lname, fname, num, addr, id):
+    def __init__(self, lname, fname, num=1231231234, addr="123 Python Dr.", id=0000000):
         self.last_name = lname
         self.first_name = fname
         self.number = num
         self.address = addr
         try:
-            id / 2
-        except ValueError:
-            print("Enter a valid ID")
+            int(id) / 2
+        except AttributeError:
+            print("E'Customer' object has no attribute 'cid'")
             exit(-1)
         self.id_c = id
 
@@ -37,6 +37,10 @@ class Customer:
 
 
 emp = Customer('Ruiz', 'Matthew')  # call the construtor, needs to have a first and last name in parameter
-emp.set_first_name('Matt')
+emp.set_fname('Matt')
 print(emp.display())  # display returns a str, so print the information
 del emp  # clean up!
+customer2 = Customer('Robert', 'Evanidus')
+customer2.set_id("abcd")
+customer2.display()
+del customer2
