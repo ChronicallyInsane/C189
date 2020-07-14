@@ -1,14 +1,27 @@
+"""
+Author: Evan
+Date: TDB
+Purpose: seventh circle of hell.
+
+"""
+
+
+def chk_id(i):
+    try:
+        int(i) / 2
+    except ValueError:
+        print("E'Customer' object has no attribute 'cid'")
+        exit(-1)
+
+
 class Customer:
+
     def __init__(self, lname, fname, num=1231231234, addr="123 Python Dr.", id=0000000):
         self.last_name = lname
         self.first_name = fname
         self.number = num
         self.address = addr
-        try:
-            int(id) / 2
-        except AttributeError:
-            print("E'Customer' object has no attribute 'cid'")
-            exit(-1)
+        chk_id(id)
         self.id_c = id
 
     def __str__(self):
@@ -30,6 +43,7 @@ class Customer:
         self.address = addr
 
     def set_id(self, id):
+        chk_id(id)
         self.id_c = id
 
     def display(self):
