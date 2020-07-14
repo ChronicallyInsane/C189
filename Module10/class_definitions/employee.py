@@ -1,3 +1,9 @@
+"""
+Author: Evan
+Date: TBD
+Purpose: Class based Programming.
+"""
+
 from datetime import datetime, timedelta
 
 
@@ -39,6 +45,12 @@ class Employee:
             print("Salaried Employee: ", self.salary, "/year\n", "Start Date: ", self.start_date)
         else:
             print("Hourly Employee: ", self.salary, "/hour\n", "Start Date: ", self.start_date)
+
+    def __str__(self):
+        return 'Person with last name ' + str(self.last_name) + ', first name ' + str(self.first_name)
+
+    def __repr__(self):
+        return 'Person(first_name={}, last_name={}'.format(self.first_name, self.last_name)
 
 
 emp = Employee('Ruiz', 'Matthew')  # call the construtor, needs to have a first and last name in parameter
