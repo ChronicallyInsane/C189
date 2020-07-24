@@ -50,11 +50,11 @@ class Customer:
         print(self.id_c, " ", self.last_name + " " + self.first_name, "\n", self.address, "\n", self.number)
 
 
-emp = Customer('Ruiz', 'Matthew')  # call the construtor, needs to have a first and last name in parameter
-emp.set_fname('Matt')
-print(emp.display())  # display returns a str, so print the information
-del emp  # clean up!
-customer2 = Customer('Robert', 'Evanidus')
-customer2.set_id("abcd")
-customer2.display()
-del customer2
+#emp = Customer('Ruiz', 'Matthew')  # call the construtor, needs to have a first and last name in parameter
+#emp.set_fname('Matt')
+#print(emp.display())  # display returns a str, so print the information
+#del emp  # clean up!
+#customer2 = Customer('Robert', 'Evanidus')
+#customer2.set_id("abcd")
+#customer2.display()
+#del customer2
