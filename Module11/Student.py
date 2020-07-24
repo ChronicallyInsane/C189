@@ -10,7 +10,8 @@ import Module11.Person as p
 class Student(p.Person):
     """Student string extending person"""
 
-    def __init__(self, id, major="Computer Science", gpa=0.00, start_date="00/00/2000"):
+    def __init__(self, id, fname, lname, major="Computer Science", gpa=0.00, start_date="00/00/2000"):
+        super().__init__(lname, fname)
         self.major = major
         self.gpa = gpa
         self.date = start_date
@@ -26,8 +27,8 @@ class Student(p.Person):
         self.date = datetime.now()
 
     def display(self):
-        print(self.Person.display(),
-              "\nGPA: {}".format(self.gpa) + "\n Major:{}".format(self.major) + "\n Start Date:{}".format(self.date))
+        print("{}, {} at: \n".format(self.last_name, self.first_name, self.address))
+        print("\nGPA: {}".format(self.gpa) + "\n Major:{}".format(self.major) + "\n Start Date:{}".format(self.date))
 
 
 # Driver
