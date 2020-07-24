@@ -17,11 +17,13 @@ class Invoice:
         self.register = dict()
 
     def add_item(self, dict_t):
+
         self.register.update(dict_t)
+        print("added")
 
     def create_invoice(self):
         print("Customer#{}".format(self.cid), ":{}".format(self.Customer.display()), self.__total_register__())
-
+        print("created")
     def __total_register__(self):
         total = 0
         for key, value in self.register.items():
