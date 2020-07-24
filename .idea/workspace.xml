@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="derrived classes">
+      <change afterPath="$PROJECT_DIR$/Module11/employee.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module11/Student.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module11/Student.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +56,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Module11" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Module11" />
+      <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Module10/class_definitions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Module7/fun_with_collections" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Student">
@@ -382,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595607052015</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="derrived classes">
+      <created>1595607847899</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1595607847899</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,10 +467,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1593275834013" />
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595606205708">
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595607858816">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1595606205708" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1595607858816" />
     <state x="476" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593029164920">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
