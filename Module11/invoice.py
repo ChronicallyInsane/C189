@@ -6,6 +6,9 @@ Purpose: reverse engineering the invoice class -- since it's closed and I didn't
 """
 import Module10.class_definitions.customer
 
+# I don't have access to the proper Invoice design Doc (I left it for too late due to IRL difficulties)
+# Thus I had to design it based on your example string (thus the imperfections.)
+# I hope I accomplished more or less what was intended.
 
 class Invoice:
 
@@ -19,11 +22,13 @@ class Invoice:
     def add_item(self, dict_t):
 
         self.register.update(dict_t)
-        print("added")
+        #print("added")
 
     def create_invoice(self):
-        print("Customer#{}".format(self.cid), ":{}".format(self.Customer.display()), self.__total_register__())
-        print("created")
+        print("Customer# {}".format(self.cid))
+        print(self.Customer.display(), self.__total_register__())
+        #print("created")
+
     def __total_register__(self):
         total = 0
         for key, value in self.register.items():

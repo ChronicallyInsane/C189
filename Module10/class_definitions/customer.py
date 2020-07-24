@@ -16,7 +16,7 @@ def chk_id(i):
 
 class Customer:
 
-    def __init__(self, lname, fname, num=1231231234, addr="123 Python Dr.", id=0000000):
+    def __init__(self, id, lname, fname, num=1231231234, addr="123 Python Dr."):
         self.last_name = lname
         self.first_name = fname
         self.number = num
