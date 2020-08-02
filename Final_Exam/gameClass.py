@@ -300,9 +300,10 @@ class Ship:
         self.world = world
 
 
-#w = Gameboard(10, 10)
-#Gameboard.populate(w)
-#for i in range(0, w.x):
-#    for j in range(0, w.y):
-#        print(w.world[j][i].getclass())
-#    print("\n")
+w = Gameboard(10, 10)
+Gameboard.populate(w)
+for i in range(0, w.x):
+    for j in range(0, w.y):
+        w.fire(w.world[j][i])
+        print("{}...{}".format(w.world[j][i].getclass(), w.world[j][i].is_sunk()))
+
