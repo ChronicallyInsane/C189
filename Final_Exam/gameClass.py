@@ -24,12 +24,62 @@ class Gameboard:
     def __str__(self):
         return "Gameboard({}, {})".format(self.x, self.y)
 
-    def populate(board):
-        shipJournal = {"shuttle": 0, "destroyer": 0, "frigate": 0, "carrier": 0, "battleship": 0}
-        i = 1
+    def populate(board):  # This is a hack, but it saves implementation time/bug fixing
+
+        journal = {"shuttle": 0, "destroyer": 0, "frigate": 0, "carrier": 0, "battleship": 0}
         while board.populated != 1:
             randx = randint(0, board.x)
             randy = randint(0, board.y)
+            if journal["shuttle"] == 0:
+                if randint(1, 2) == 1:
+                    if randx + 1 > board.x:  # shuttle
+                        continue
+                    board.world[randy][randx] = Ship(1, Position(randx, randy, board.x, board.y), 1)
+                    journal["shuttle"] = 1
+                else:
+                    if randy + 1 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(1, Position(randx, randy, board.x, board.y), 2)
+                    journal["shuttle"] = 1
+            if journal["destroyer"] == 0:
+                if randint(1, 2) == 1:
+                    if randx + 2 > board.x:  # destroyer
+                        continue
+                    board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 1)
+                else:
+                    if randy + 2 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 2)
+            if journal["frigate"] == 0:
+
+                if randint(1, 2) == 1:
+                    if randx + 3 > board.x:  # frigate
+                        continue
+                    board.world[randy][randx] = Ship(3, Position(randx, randy, board.x, board.y), 1)
+                else:
+                    if randy + 3 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(3, Position(randx, randy, board.x, board.y), 2)
+            if journal["carrier"] == 0:
+
+                if randint(1, 2) == 1:
+                    if randx + 4 > board.x:  # carrier
+                        continue
+                    board.world[randy][randx] = Ship(4, Position(randx, randy, board.x, board.y), 1)
+                else:
+                    if randy + 4 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(4, Position(randx, randy, board.x, board.y), 2)
+            if journal["battleship"] == 0:
+
+                if randint(1, 2) == 1:
+                    if randx + 5 > board.x:  # battleship
+                        continue
+                    board.world[randy][randx] = Ship(5, Position(randx, randy, board.x, board.y), 1)
+                else:
+                    if randy + 5 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(5, Position(randx, randy, board.x, board.y), 2)
         """
         Populates a gameboard,
         0 for ocean,
@@ -133,6 +183,7 @@ class Ship:
 
 
 w = Gameboard(10, 10)
+Gameboard.populate(w)
 for i in range(0, 9):
     for j in range(0, 9):
         pass
