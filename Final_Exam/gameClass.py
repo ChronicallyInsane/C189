@@ -8,26 +8,28 @@ from random import randint
 
 
 class Gameboard:
+
     def __init__(self, x_size=10, y_size=10):  # defines gameworld made up of gridded segments.
-        self.world = [[0]*y_size]*x_size
-        for i in range(0, x_size):
-            for j in range(0, y_size):
-                self.world[j][i] = Ship(0, Position(i, j, x_size, y_size))
-        self.populated = 0  # whether a board has been 'made' yet; 0 for no, 1 for yes
+        if x_size < 0 or x_size > 30:
+            raise ValueError("bounds too high/low")
+        if y_size < 0 or y_size > 30:
+            raise ValueError("bounds too high/low")
         self.x = x_size
         self.y = y_size
 
+        self.world = [[Ship(0, Position(j, i, self.y, self.x), 0) for j in range(self.y)] for i in range(self.x)]
+
+        self.populated = 0  # whether a board has been 'made' yet; 0 for no, 1 for yes
+
     def __str__(self):
+        return "Gameboard({}, {})".format(self.x, self.y)
 
     def populate(board):
         shipJournal = {"shuttle": 0, "destroyer": 0, "frigate": 0, "carrier": 0, "battleship": 0}
-        i=1
+        i = 1
         while board.populated != 1:
             randx = randint(0, board.x)
             randy = randint(0, board.y)
-
-
-
         """
         Populates a gameboard,
         0 for ocean,
@@ -43,19 +45,16 @@ class Gameboard:
         if Ship.getclass() == 0:  # ocean targeted
             pass
             # print GUI you missed
-        elif Ship.facing == 1:
             if Ship.is_sunk() == 0:
-                for i in range (Ship.loca)
-
-
+                Ship.is_hit(1)  # impact
 
         # print GUI you hit!
 
 
-class Position:# x, y coordinate  size is array bounds, non-square boards out of scope of project.
+class Position:  # x, y coordinate  size is array bounds, non-square boards out of scope of project.
     def __init__(self, x, y, xmax, ymax):
         if x > xmax or y > ymax or x < 0 or y < 0:
-            raise IndexError("out of range:{}\n".format(self.size))
+            raise IndexError("out of range:{}, {}\n".format(self.xmax, self.ymax))
 
         self.x = x
         self.y = y
@@ -71,12 +70,12 @@ class Position:# x, y coordinate  size is array bounds, non-square boards out of
 
     def setX(self, x):
         if x > self.xmax or x < 0:
-            raise IndexError("out of range:{}\n".format(self.size))
+            raise IndexError("out of range:{}\n".format(self.xmax))
         self.x = x
 
     def setY(self, y):  # greater than max length or less than zero
         if y > self.ymax or y < 0:
-            raise IndexError("out of range:{}\n".format(self.size))
+            raise IndexError("out of range:{}\n".format(self.ymax))
 
     def setjournal(self, value):
         self.journal.append(value)
@@ -94,6 +93,12 @@ class Ship:
             self.facing = facing  # 1 for horizontal, 2 for vertical, 0 for empty ocean
         else:
             raise ValueError("direction invalid")  # input validation
+        if position.x > position.xmax or position.x < 0:
+            raise ValueError("X Location Invalid")
+
+        if position.y > position.ymax or position.y < 0:
+            raise ValueError("Y Location Invalid")
+        self.position = position
         self.hit = 0
         self.sunk = 0
 
@@ -108,18 +113,23 @@ class Ship:
             self.hit = hit
         else:
             raise ValueError("Invalid Input")
+        if Ship.isfacing() == 1:
+            pass
 
-    def is_sunk(self, sunk):
-        if sunk == 1 or sunk == 0:
-            self.sunk = sunk
-        else:
-            raise ValueError("Invalid Input")
+    def is_sunk(self):
+        return self.sunk
 
     def getclass(self):
         return self.ShipClass
 
     def getposition(self):
         return self.position
+
+    def isfacing(self):
+        return self.facing
+
+    def setworld(self, world):
+        self.world = world
 
 
 w = Gameboard(10, 10)
