@@ -157,7 +157,7 @@ class Gameboard:
                             Ship.position.setjournal(Ship.position.y, i)
                             token += 1
                 if token == Ship.getclass():
-                    for i in range(0, self.x, 2):
+                    for i in range(0, len(Ship.position.journal), 2):
                         self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i+1)].sink()
             else:
                 token = 0
@@ -167,7 +167,7 @@ class Gameboard:
                             Ship.position.setjournal(i, Ship.position.x)
                             token += 1
                 if token == Ship.getclass():
-                    for i in range(0, self.y, 2):
+                    for i in range(0, len(Ship.position.journal), 2):
                         self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i + 1)].sink()
 
         # print GUI you hit!
