@@ -28,58 +28,99 @@ class Gameboard:
 
         journal = {"shuttle": 0, "destroyer": 0, "frigate": 0, "carrier": 0, "battleship": 0}
         while board.populated != 1:
-            randx = randint(0, board.x)
-            randy = randint(0, board.y)
+            randx = randint(0, board.x - 1)
+            randy = randint(0, board.y - 1)
             if journal["shuttle"] == 0:
                 if randint(1, 2) == 1:
-                    if randx + 1 > board.x:  # shuttle
+                    if randx + 1 > board.x - 1:  # shuttle
                         continue
                     board.world[randy][randx] = Ship(1, Position(randx, randy, board.x, board.y), 1)
                     journal["shuttle"] = 1
+                    board.populated = 1
                 else:
                     if randy + 1 > board.y:
                         continue
                     board.world[randy][randx] = Ship(1, Position(randx, randy, board.x, board.y), 2)
                     journal["shuttle"] = 1
+                    board.populated = 1
             if journal["destroyer"] == 0:
                 if randint(1, 2) == 1:
-                    if randx + 2 > board.x:  # destroyer
+                    if randx + 1 > board.x - 1:  # destroyer
                         continue
                     board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 1] = Ship(2, Position(randx + 1, randy, board.x, board.y), 1)
+                    journal["destroyer"] = 1
+                    board.populated = 1
+                else:
+                    if randy + 1 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 2)
+                    board.world[randy + 1][randx] = Ship(2, Position(randx, randy + 1, board.x, board.y), 2)
+                    journal["destroyer"] = 1
+                    board.populated = 1
+            if journal["frigate"] == 0:
+                if randint(1, 2) == 1:
+                    if randx + 2 > board.x - 1:  # destroyer
+                        continue
+                    board.world[randy][randx] = Ship(3, Position(randx, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 1] = Ship(3, Position(randx + 1, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 2] = Ship(3, Position(randx + 2, randy, board.x, board.y), 1)
+
+                    journal["frigate"] = 1
+                    board.populated = 1
                 else:
                     if randy + 2 > board.y:
                         continue
-                    board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 2)
-            if journal["frigate"] == 0:
-
-                if randint(1, 2) == 1:
-                    if randx + 3 > board.x:  # frigate
-                        continue
-                    board.world[randy][randx] = Ship(3, Position(randx, randy, board.x, board.y), 1)
-                else:
-                    if randy + 3 > board.y:
-                        continue
                     board.world[randy][randx] = Ship(3, Position(randx, randy, board.x, board.y), 2)
+                    board.world[randy + 1][randx] = Ship(3, Position(randx, randy + 1, board.x, board.y), 2)
+                    board.world[randy + 2][randx] = Ship(3, Position(randx, randy + 2, board.x, board.y), 2)
+                    journal["frigate"] = 1
+                    board.populated = 1
             if journal["carrier"] == 0:
-
                 if randint(1, 2) == 1:
-                    if randx + 4 > board.x:  # carrier
+                    if randx + 3 > board.x - 1:  # destroyer
                         continue
                     board.world[randy][randx] = Ship(4, Position(randx, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 1] = Ship(4, Position(randx + 1, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 2] = Ship(4, Position(randx + 2, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 3] = Ship(4, Position(randx + 3, randy, board.x, board.y), 1)
+
+                    journal["carrier"] = 1
+                    board.populated = 1
+                else:
+                    if randy + 2 > board.y:
+                        continue
+                    board.world[randy][randx] = Ship(4, Position(randx, randy, board.x, board.y), 2)
+                    board.world[randy + 1][randx] = Ship(4, Position(randx, randy + 1, board.x, board.y), 2)
+                    board.world[randy + 2][randx] = Ship(4, Position(randx, randy + 2, board.x, board.y), 2)
+                    board.world[randy + 3][randx] = Ship(4, Position(randx, randy + 3, board.x, board.y), 2)
+
+                    journal["carrier"] = 1
+                    board.populated = 1
+            if journal["battleship"] == 0:
+                if randint(1, 2) == 1:
+                    if randx + 4 > board.x - 1:  # destroyer
+                        continue
+                    board.world[randy][randx] = Ship(5, Position(randx, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 1] = Ship(5, Position(randx + 1, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 2] = Ship(5, Position(randx + 2, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 3] = Ship(5, Position(randx + 3, randy, board.x, board.y), 1)
+                    board.world[randy][randx + 4] = Ship(5, Position(randx + 4, randy, board.x, board.y), 1)
+
+                    journal["battleship"] = 1
+                    board.populated = 1
                 else:
                     if randy + 4 > board.y:
                         continue
-                    board.world[randy][randx] = Ship(4, Position(randx, randy, board.x, board.y), 2)
-            if journal["battleship"] == 0:
-
-                if randint(1, 2) == 1:
-                    if randx + 5 > board.x:  # battleship
-                        continue
-                    board.world[randy][randx] = Ship(5, Position(randx, randy, board.x, board.y), 1)
-                else:
-                    if randy + 5 > board.y:
-                        continue
                     board.world[randy][randx] = Ship(5, Position(randx, randy, board.x, board.y), 2)
+                    board.world[randy + 1][randx] = Ship(5, Position(randx, randy + 1, board.x, board.y), 2)
+                    board.world[randy + 2][randx] = Ship(5, Position(randx, randy + 2, board.x, board.y), 2)
+                    board.world[randy + 3][randx] = Ship(5, Position(randx, randy + 3, board.x, board.y), 2)
+                    board.world[randy + 4][randx] = Ship(5, Position(randx, randy + 3, board.x, board.y), 2)
+
+                    journal["battleship"] = 1
+                    board.populated = 1
+
         """
         Populates a gameboard,
         0 for ocean,
@@ -97,6 +138,26 @@ class Gameboard:
             # print GUI you missed
             if Ship.is_sunk() == 0:
                 Ship.is_hit(1)  # impact
+            if Ship.isfacing() == 1:
+                token = 0
+                for i in range(0, self.x):
+                    if self.world[Ship.position.y][i].hit() == 1:
+                        if self.world[Ship.position.y][i].getclass() == Ship.getclass():
+                            Ship.position.setjournal(Ship.position.y, i)
+                            token += 1
+                if token == Ship.getclass():
+                    for i in range(0, self.x, 2):
+                        self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i+1)].sink()
+            else:
+                token = 0
+                for i in range(0, self.y):
+                    if self.world[i][Ship.position.x].hit() == 1:
+                        if self.world[i][Ship.position.x].getclass() == Ship.getclass():
+                            Ship.position.setjournal(i, Ship.position.x)
+                            token += 1
+                if token == Ship.getclass():
+                    for i in range(0, self.y, 2):
+                        self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i + 1)].sink()
 
         # print GUI you hit!
 
@@ -127,11 +188,12 @@ class Position:  # x, y coordinate  size is array bounds, non-square boards out 
         if y > self.ymax or y < 0:
             raise IndexError("out of range:{}\n".format(self.ymax))
 
-    def setjournal(self, value):
+    def setjournal(self, value, val2):
         self.journal.append(value)
+        self.journal.append(val2)
 
-    def getjournal(self):
-        return self.journal
+    def getjournal(self, i):
+        return self.journal[i]
 
 
 class Ship:
@@ -149,22 +211,21 @@ class Ship:
         if position.y > position.ymax or position.y < 0:
             raise ValueError("Y Location Invalid")
         self.position = position
-        self.hit = 0
+        self.damage = 0
         self.sunk = 0
 
     def hit(self):
-        self.hit = 1
+        return self.damage
 
-    def sunk(self):
+    def sink(self):
         self.sunk = 1
+        #GUI print you've sunk my Ship.getClass()!
 
     def is_hit(self, hit):
         if hit == 1 or hit == 0:
-            self.hit = hit
+            self.damage = hit
         else:
             raise ValueError("Invalid Input")
-        if Ship.isfacing() == 1:
-            pass
 
     def is_sunk(self):
         return self.sunk
@@ -184,6 +245,8 @@ class Ship:
 
 w = Gameboard(10, 10)
 Gameboard.populate(w)
-for i in range(0, 9):
-    for j in range(0, 9):
-        pass
+for i in range(0, 10):
+    for j in range(0, 10):
+        w.fire(w.world[j][i])
+        print(w.world[j][i].is_sunk())
+asdasd
