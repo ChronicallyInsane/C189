@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 
 class Employee:
-    '''Employee Class '''
+    """Employee Class """
 
     # Constructor
     def __init__(self, lname, fname, num="1231231234", addr="123 Python Rd.\n Ames, IA"):
@@ -36,7 +36,7 @@ class Employee:
 class SalariedEmployee(Employee):
     # derived class
     def __init__(self, lname, fname, start_date, salary):
-        super.__init__(lname, fname)
+        super(SalariedEmployee, self).__init__(lname, fname)
         self.SD = start_date
         self.sal = salary
 
@@ -50,7 +50,7 @@ class SalariedEmployee(Employee):
 class HourlyEmployee(Employee):
     # derived class of Employee
     def __init__(self, lname, fname, h_pay, start_date):
-        super.__init__(lname, fname)
+        super(HourlyEmployee, self).__init__(lname, fname)
         self.hourly = h_pay
         self.SD = start_date
 
@@ -58,11 +58,12 @@ class HourlyEmployee(Employee):
         self.hourly = n_pay
 
     def display(self):
-        print("{}, {}, \nHourly Pay:{}\nStart Date: {}".format(self.last_name, self.first_name, self.hourly, self.SD))
+        print("{}, {}, \nHourly Pay:${}\nStart Date: {}".format(self.last_name, self.first_name, self.hourly, self.SD))
 
 
 # driver
 #book = Employee("book", "Shepard", 1, "Space, the final frontier ")
+"""
 SE = SalariedEmployee("book","Shepard", datetime.now(), 40000)
 SE.set_address("Space, the final frontier")
 SE.display()
@@ -70,9 +71,10 @@ SE.give_raise(45000)
 SE.display()
 del SE
 
-HE = HourlyEmployee("book","Shepard", datetime.now(), 10.00)
+HE = HourlyEmployee("book","Shepard", 10.00, datetime.now())
 HE.set_address("Misery")
 HE.display()
 HE.give_raise(12.00)
 HE.display()
 del HE
+"""
