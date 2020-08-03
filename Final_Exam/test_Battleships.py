@@ -1,7 +1,10 @@
 import unittest as ut
 import Final_Exam.gameClass
 
-
+"""
+Author: Evan
+Purpose: Various tests for the battleship project
+"""
 class TestB(ut.TestCase):
     def test_A(self):
         b = Final_Exam.gameClass.Gameboard(10, 10)  # populates a grid of size 10 x 10
@@ -31,3 +34,4 @@ class TestB(ut.TestCase):
     def test_e(self): # tests input validation for Position entities
         with self.assertRaises(IndexError):
             Final_Exam.gameClass.Position(1, 2, 10, -1)
+

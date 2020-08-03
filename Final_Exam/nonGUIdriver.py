@@ -1,5 +1,8 @@
 import Final_Exam.gameClass
-
+"""
+Author: Evan
+Purpose: Basic Driver to demonstrate functionality.  
+"""
 w = Final_Exam.gameClass.Gameboard(input("Enter the max col size"), input("enter the max row size"))
 Final_Exam.gameClass.Gameboard.populate(w)
 

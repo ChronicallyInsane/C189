@@ -1,6 +1,9 @@
 import tkinter as tk
 import Final_Exam.gameClass as BS
-
+"""
+Author: Evan
+Purpose: Incomplete GUI for the project
+"""
 
 def main():
     def pressed(i, j):

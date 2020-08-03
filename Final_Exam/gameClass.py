@@ -16,7 +16,12 @@ A Ship object is an all-encompassing container for either empty ocean, or the 5 
 The Ship object has various stats associated with it (damaged, sunk, which direction it is facing)
 The Primary gameloop consists of the player inputting sizes for the gameboard, and the program --
 populating the board accordingly.
-This can be played with or without the GUI.
+This can be played with or without the GUI using the appropriate driver.
+
+NOTE -- GUI is incomplete, basic initialization done, but only exit button works.
+
+GameIO contains methods for reading/writing a gameboard to a textfile.  writing works fine, but there are still--
+some bugs with reading input
 """
 import tkinter as tk
 from random import randint
@@ -26,7 +31,7 @@ class Gameboard:
 
     def __init__(self, x_size=10, y_size=10):  # defines gameworld made up of gridded segments.
         try:
-            int(x_size) and int(y_size) # non numeric input
+            int(x_size) and int(y_size)  # non numeric input
         except ValueError:
             print("bad input, non integer")
             exit(-1)
@@ -37,7 +42,6 @@ class Gameboard:
         if int(y_size) < 6 or int(y_size) > 30:
             raise ValueError("bounds too high/low")
 
-
         self.x = int(x_size)
         self.y = int(y_size)
 
@@ -47,10 +51,13 @@ class Gameboard:
         self.over = 0
 
     def __str__(self):
-        for i in range(0, self.x):
-            for j in range(0, self.y):
-                print("{}, {}, {], {}".format(self.world[j][i].getclass(), self.world[j][i].position, self.world[j][i].
-                                              isfacing(), self.ispopulated()))
+        for i in range(0, self.x - 2):
+            for j in range(0, self.y - 1):
+                print("Class:{}, X: {}, Y:{}, direction: {}, populated: {}".format(self.world[j][i].getclass(),
+                                                                                   self.world[j][i].position.x,
+                                                                                   self.world[i][j].position.y,
+                                                                                   self.world[j][i].
+                                                                                   isfacing(), self.ispopulated()))
 
     def __repr__(self):
         print("Gameboard({}, {})".format(self.x, self.y))
@@ -258,13 +265,14 @@ class Gameboard:
                         self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i + 1)].sink()
 
         # print GUI you hit!
-    def gameover(self): # checks for all ships sunk, if so gameover
+
+    def gameover(self):  # checks for all ships sunk, if so gameover
         token = 0
         for j in range(0, self.y):
             for i in range(0, self.x):
                 for k in range(1, 5):
                     if self.world[j][i].is_sunk() == 1:
-                        token +=1
+                        token += 1
         if token == 5:
             self.over = 1
             return 1
@@ -295,7 +303,7 @@ class Gameboard:
             except IndexError("Out of Range"):
                 return -1
             finally:
-                if gb.world[y][x].getclass()!=0:
+                if gb.world[y][x].getclass() != 0:
                     return -1
                 return 1
 
@@ -386,24 +394,22 @@ class Ship:
         else:
             raise ValueError("Invalid Input")
 
-    def is_sunk(self): # 1 for sunk, 0 for not
+    def is_sunk(self):  # 1 for sunk, 0 for not
         return self.sunk
 
-    def getclass(self): #explained above
+    def getclass(self):  # explained above
         return self.ShipClass
 
-    def getposition(self): #returns position object
+    def getposition(self):  # returns position object
         return self.position
 
-    def isfacing(self): # returns direction ship is facing
+    def isfacing(self):  # returns direction ship is facing
         return self.facing
 
-    def setworld(self, world): # #largely superfluous
+    def setworld(self, world):  # #largely superfluous
         self.world = world
 
-    def setclass(self, i): # change class on ship object
-        if i < 0 or i > 5:
+    def setclass(self, i):  # change class on ship object
+        if int(i) < 0 or int(i) > 5:
             raise ValueError("Bad Input")
         self.ShipClass = i
-
-
