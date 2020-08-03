@@ -34,7 +34,7 @@ class Gameboard:
         return self.populated
 
     def populate(board):  # This is a hack, but it saves implementation time/bug fixing
-        def check_occupied(i, j):
+        def check_occupied(i, j):  # randomly places ships in a manner that they stay in-bounds and don't overlap.
             """
             quick check to determine if square is occipied
             :param col:
@@ -42,10 +42,12 @@ class Gameboard:
             :return:
             """
             try:
-                board.world[randy][randx].getclass()
+                board.world[j][i].getclass()
             except IndexError("Out of Range"):
                 return -1
             finally:
+                if board.world[j][i].getclass() != 0:
+                    return -1
                 return 1
 
         journal = {"shuttle": 0, "destroyer": 0, "frigate": 0, "carrier": 0, "battleship": 0}
@@ -53,7 +55,7 @@ class Gameboard:
             k = 0
             for v in journal:
                 k += journal[v]
-                if k == 5:
+                if k == 5:  # checks if all five ships have been implemented before defining populated
                     board.populated = 1
 
             randx = randint(0, board.x - 1)  # random placement of ships
@@ -201,7 +203,7 @@ class Gameboard:
             # print GUI you missed
         if Ship.is_sunk() == 0:
             Ship.is_hit(1)  # impact
-            if Ship.isfacing() == 1:# horizontal
+            if Ship.isfacing() == 1:  # horizontal
                 token = 0
                 for i in range(0, self.x):
                     if self.world[Ship.position.y][i].hit() == 1:
@@ -228,18 +230,51 @@ class Gameboard:
         journ = []
         if num < 0 or num > 5:
             raise ValueError("Bad input")
-        for j in range(0, gb.y - 1):
-            for i in range(0, gb.x - 1):
+        for j in range(0, gb.y):
+            for i in range(0, gb.x):
                 if self.world[j][i].ShipClass == num:
                     journ.append(j)
                     journ.append(i)
         return journ
-    def replaceship(self, gb, num, pos):
-        if num < 0 or num > 5 or pos.x < 0 or pos.y < 0:
+
+    def replaceship(self, gb, num, x, y, dir):
+        def check_occupied(i, j):  # randomly places ships in a manner that they stay in-bounds and don't overlap.
+            """
+            quick check to determine if square is occipied
+            :param col:
+            :param row:
+            :return:
+            """
+            try:
+                gb.world[y][x].getclass()
+            except IndexError("Out of Range"):
+                return -1
+            finally:
+                if gb.world[y][x].getclass()!=0:
+                    return -1
+                return 1
+
+        if num < 0 or num > 5 or dir < 1 or dir > 2:
             raise ValueError("Bad input")
-        for j in range(0, gb.y - 1):
-            for i in range(0, gb.x - 1):
-                if self.world[j][i].ShipClass == num:
+        for j in range(0, gb.y):
+            for i in range(0, gb.x):
+                if gb.world[j][i].ShipClass == num:
+                    gb.world[j][i].setclass(0)
+        if dir == 1:
+            for k in range(0, num):
+                if check_occupied(k, j) == -1:
+                    raise ValueError("Overlapping Values")
+                    return
+            for k in range(0, num):
+                gb.world[j][k].setclass(num)
+        else:
+            for k in range(0, num):
+                if check_occupied(i, k) == -1:
+                    raise ValueError("Overlapping Values")
+                    return
+            for k in range(0, num):
+                gb.world[k][i].setclass(num)
+
 
 class Position:  # x, y coordinate  size is array bounds, non-square boards out of scope of project.
     def __init__(self, x, y, xmax, ymax):
@@ -321,21 +356,18 @@ class Ship:
     def setworld(self, world):
         self.world = world
 
+    def setclass(self, i):
+        if i < 0 or i > 5:
+            raise ValueError("Bad Input")
+        self.ShipClass = i
 
-"""
+
 w = Gameboard(10, 10)
 Gameboard.populate(w)
 l = []
 for i in range(0, w.x):
     for j in range(0, w.y):
-
         w.fire(w.world[j][i])
         print("{}...{}".format(w.world[j][i].getclass(), w.world[j][i].is_sunk()))
 
 
-        l = b.findship(b, 1)  # find shuttle class ship, returns list of coords
-        for i in range(0, len(l), 2):
-            b.fire(b.world[i][i+1])
-        for i in range(0, len(l), 2):
-            self.assertEqual(b.world[i][i+1].is_sunk(), 1)
-"""
