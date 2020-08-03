@@ -19,9 +19,9 @@ populating the board accordingly.
 This can be played with or without the GUI using the appropriate driver.
 
 NOTE -- GUI is incomplete, basic initialization done, but only exit button works.
-
-GameIO contains methods for reading/writing a gameboard to a textfile.  writing works fine, but there are still--
-some bugs with reading input
+NOTE -- No database
+GameIO contains methods for reading/writing a gameboard to a textfile.
+tests are in test_Battleships
 """
 import tkinter as tk
 from random import randint
@@ -36,11 +36,11 @@ class Gameboard:
             print("bad input, non integer")
             exit(-1)
 
-        if int(x_size) < 6 or int(x_size) > 30:
-            raise ValueError("bounds too high/low")
+        if int(x_size) < 6 or int(x_size) > 30: # too low, and arbitrary higher
+            raise ValueError("bounds too high/low, 6 <  x < 30")
 
         if int(y_size) < 6 or int(y_size) > 30:
-            raise ValueError("bounds too high/low")
+            raise ValueError("bounds too high/low 6 < x < 30")
 
         self.x = int(x_size)
         self.y = int(y_size)
@@ -94,14 +94,14 @@ class Gameboard:
             randy = randint(0, board.y - 1)
             if journal["shuttle"] == 0:  # checks if ship type has been built
                 if randint(1, 2) == 1:  # horizontal or vertical
-                    if randx or randy > board.x - 1:  # shuttle
+                    if randx > board.x-1 or randy > board.y:  # shuttle
                         continue
                     if not check_occupied(randy, randx):
                         continue
                     board.world[randy][randx] = Ship(1, Position(randx, randy, board.x, board.y), 1)
                     journal["shuttle"] = 1
                 else:
-                    if randx or randy > board.y:
+                    if randx > board.x or randy > board.y-1:
                         continue
                     if not check_occupied(randy, randx):
                         continue
@@ -111,7 +111,7 @@ class Gameboard:
                 randx = randint(0, board.x - 1)
                 randy = randint(0, board.y - 1)
                 if randint(1, 2) == 1:
-                    if randx + 1 >= board.x - 1 or randy >= board.y:  # destroyer
+                    if randx + 1 > board.x - 1 or randy > board.y:  # destroyer
                         continue
                     for i in range(0, 1):
                         if not check_occupied(randy, i):
@@ -123,7 +123,7 @@ class Gameboard:
                 else:
                     randx = randint(0, board.x - 1)
                     randy = randint(0, board.y - 1)
-                    if randx + 1 >= board.x - 1 or randy >= board.y:  # destroyer
+                    if randx + 1 > board.x - 1 or randy > board.y:  # destroyer
                         continue
                     for i in range(0, 1):
                         if not check_occupied(i, randx):
@@ -135,7 +135,7 @@ class Gameboard:
                 randx = randint(0, board.x - 1)
                 randy = randint(0, board.y - 1)
                 if randint(1, 2) == 1:
-                    if randx + 2 >= board.x - 1 or randy >= board.y:  # destroyer
+                    if randx + 2 > board.x - 1 or randy > board.y:  # destroyer
                         continue
                     for i in range(0, 2):
                         if not check_occupied(randy, i):
@@ -148,7 +148,7 @@ class Gameboard:
                 else:
                     randx = randint(0, board.x - 1)
                     randy = randint(0, board.y - 1)
-                    if randy + 2 >= board.y or randx >= board.x:
+                    if randy + 2 > board.y-1 or randx > board.x:
                         continue
                     for i in range(0, 2):
                         if not check_occupied(i, randx):
@@ -161,7 +161,7 @@ class Gameboard:
                 randx = randint(0, board.x - 1)
                 randy = randint(0, board.y - 1)
                 if randint(1, 2) == 1:
-                    if randx + 3 >= board.x - 1 or randy >= board.y:  # destroyer
+                    if randx + 3 > board.x - 1 or randy > board.y:  # destroyer
                         continue
                     for i in range(0, 3):
                         if not check_occupied(randy, i):
@@ -175,7 +175,7 @@ class Gameboard:
                 else:
                     randx = randint(0, board.x - 1)
                     randy = randint(0, board.y - 1)
-                    if randy + 3 >= board.y or randx >= board.x:
+                    if randy + 3 > board.y-1 or randx > board.x:
                         continue
                     for i in range(0, 3):
                         if not check_occupied(i, randx):
@@ -190,7 +190,7 @@ class Gameboard:
                 randx = randint(0, board.x - 1)
                 randy = randint(0, board.y - 1)
                 if randint(1, 2) == 1:
-                    if randx + 4 >= board.x - 1 or randy >= board.y:  # destroyer
+                    if randx + 4 > board.x - 1 or randy > board.y:  # destroyer
                         continue
                     for i in range(0, 4):
                         if not check_occupied(randy, i):
@@ -205,7 +205,7 @@ class Gameboard:
                 else:
                     randx = randint(0, board.x - 1)
                     randy = randint(0, board.y - 1)
-                    if randy + 4 >= board.y or randx > board.x:
+                    if randy + 4 > board.y-1 or randx > board.x:
                         continue
                     for i in range(0, 4):
                         if not check_occupied(i, randx):
@@ -285,7 +285,7 @@ class Gameboard:
             raise ValueError("Bad input")
         for j in range(0, gb.y):
             for i in range(0, gb.x):
-                if self.world[j][i].ShipClass == num:
+                if self.world[j][i].getclass() == num:
                     journ.append(j)
                     journ.append(i)
         return journ
@@ -311,20 +311,18 @@ class Gameboard:
             raise ValueError("Bad input")
         for j in range(0, gb.y):
             for i in range(0, gb.x):
-                if gb.world[j][i].ShipClass == num:
+                if gb.world[j][i].getclass() == num:
                     gb.world[j][i].setclass(0)
         if dir == 1:
             for k in range(0, num):
                 if check_occupied(k, j) == -1:
                     raise ValueError("Overlapping Values")
-                    return
             for k in range(0, num):
                 gb.world[j][k].setclass(num)
         else:
             for k in range(0, num):
                 if check_occupied(i, k) == -1:
                     raise ValueError("Overlapping Values")
-                    return
             for k in range(0, num):
                 gb.world[k][i].setclass(num)
 
@@ -413,3 +411,4 @@ class Ship:
         if int(i) < 0 or int(i) > 5:
             raise ValueError("Bad Input")
         self.ShipClass = i
+

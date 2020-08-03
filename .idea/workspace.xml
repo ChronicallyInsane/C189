@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="too sexy">
+    <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="finishing touches on __rpr__">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/GUIDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/GUIDriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/gameClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/gameClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final_Exam/gameboard.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/gameboard.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final_Exam/gameio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/gameio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/nonGUIdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/nonGUIdriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" afterDir="false" />
     </list>
@@ -72,7 +70,7 @@
       <recent name="$PROJECT_DIR$/Module10/class_definitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gameio">
+  <component name="RunManager" selected="Python tests.Unittests in test_Battleships.py">
     <configuration name="GUIDriver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gameio" />
         <item itemvalue="Python tests.Unittests in test_Battleships.py" />
-        <item itemvalue="Python.nonGUIdriver" />
         <item itemvalue="Python.GUIDriver" />
+        <item itemvalue="Python.nonGUIdriver" />
         <item itemvalue="Python.gameClass" />
+        <item itemvalue="Python.gameio" />
       </list>
     </recent_temporary>
   </component>
@@ -493,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596421791878</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="finishing touches on __rpr__">
+      <created>1596425578959</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1596425578959</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -529,7 +534,8 @@
     <MESSAGE value="derrived classes" />
     <MESSAGE value="Employee M11" />
     <MESSAGE value="too sexy" />
-    <option name="LAST_COMMIT_MESSAGE" value="too sexy" />
+    <MESSAGE value="finishing touches on __rpr__" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing touches on __rpr__" />
   </component>
   <component name="WindowStateProjectService">
     <state x="98" y="100" width="1170" height="533" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593273951600">
@@ -544,38 +550,38 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="168" key="GridCell.Tab.0.bottom" timestamp="1596425555467">
+    <state width="656" height="167" key="GridCell.Tab.0.bottom" timestamp="1596429881696">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596425555467" />
-    <state width="1343" height="168" key="GridCell.Tab.0.center" timestamp="1596425555467">
+    <state width="656" height="167" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596429881696" />
+    <state width="656" height="167" key="GridCell.Tab.0.center" timestamp="1596429881694">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596425555467" />
-    <state width="1343" height="168" key="GridCell.Tab.0.left" timestamp="1596425555466">
+    <state width="656" height="167" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596429881694" />
+    <state width="656" height="167" key="GridCell.Tab.0.left" timestamp="1596429881693">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596425555466" />
-    <state width="1343" height="168" key="GridCell.Tab.0.right" timestamp="1596425555467">
+    <state width="656" height="167" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596429881693" />
+    <state width="656" height="167" key="GridCell.Tab.0.right" timestamp="1596429881695">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596425555467" />
-    <state width="1343" height="214" key="GridCell.Tab.1.bottom" timestamp="1596425295753">
+    <state width="656" height="167" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596429881695" />
+    <state width="656" height="214" key="GridCell.Tab.1.bottom" timestamp="1596429613443">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596425295753" />
-    <state width="1343" height="214" key="GridCell.Tab.1.center" timestamp="1596425295751">
+    <state width="656" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596429613443" />
+    <state width="656" height="214" key="GridCell.Tab.1.center" timestamp="1596429613441">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596425295751" />
-    <state width="1343" height="214" key="GridCell.Tab.1.left" timestamp="1596425295750">
+    <state width="656" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596429613441" />
+    <state width="656" height="214" key="GridCell.Tab.1.left" timestamp="1596429613441">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596425295750" />
-    <state width="1343" height="214" key="GridCell.Tab.1.right" timestamp="1596425295752">
+    <state width="656" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596429613441" />
+    <state width="656" height="214" key="GridCell.Tab.1.right" timestamp="1596429613442">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596425295752" />
+    <state width="656" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596429613442" />
     <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596421669481">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -596,23 +602,23 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="483" y="266" width="394" height="200" key="git4idea.ui.GitStashDialog/0.0.1366.731@0.0.1366.731" timestamp="1593027630339" />
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1593102421533">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1596429480803">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1593102421533" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1596429480803" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Final_Exam/test_Battleships.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="8" />
+          <line>52</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final_Exam/gameClass.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/Final_Exam/nonGUIdriver.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
