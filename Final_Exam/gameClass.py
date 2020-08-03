@@ -25,14 +25,21 @@ from random import randint
 class Gameboard:
 
     def __init__(self, x_size=10, y_size=10):  # defines gameworld made up of gridded segments.
-        if x_size < 6 or x_size > 30:
+        try:
+            int(x_size) and int(y_size) # non numeric input
+        except ValueError:
+            print("bad input, non integer")
+            exit(-1)
+
+        if int(x_size) < 6 or int(x_size) > 30:
             raise ValueError("bounds too high/low")
 
-        if y_size < 6 or y_size > 30:
+        if int(y_size) < 6 or int(y_size) > 30:
             raise ValueError("bounds too high/low")
 
-        self.x = x_size
-        self.y = y_size
+
+        self.x = int(x_size)
+        self.y = int(y_size)
 
         self.world = [[Ship(0, Position(j, i, self.y, self.x), 0) for j in range(self.y)] for i in range(self.x)]
 
