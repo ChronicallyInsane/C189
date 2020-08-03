@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="Employee M11">
+      <change afterPath="$PROJECT_DIR$/Final_Exam/nonGUIdriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/gameClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/gameClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
       <recent name="$PROJECT_DIR$/Module10/class_definitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gameClass">
+  <component name="RunManager" selected="Python tests.Unittests in test_Battleships.py">
     <configuration name="GUIDriver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,27 +112,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="C189" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module11" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module11/Manager.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="gameClass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +125,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final_Exam/gameClass.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nonGUIdriver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final_Exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final_Exam/nonGUIdriver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gameClass" />
         <item itemvalue="Python tests.Unittests in test_Battleships.py" />
+        <item itemvalue="Python.nonGUIdriver" />
+        <item itemvalue="Python.gameClass" />
         <item itemvalue="Python.GUIDriver" />
         <item itemvalue="Python.GUIvis" />
-        <item itemvalue="Python.Manager" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596414898596</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Employee M11">
+      <created>1596416394218</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1596416394218</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,38 +515,38 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="168" key="GridCell.Tab.0.bottom" timestamp="1596416259120">
+    <state width="1343" height="168" key="GridCell.Tab.0.bottom" timestamp="1596419328830">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596416259120" />
-    <state width="1343" height="168" key="GridCell.Tab.0.center" timestamp="1596416259120">
+    <state width="1343" height="168" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596419328830" />
+    <state width="1343" height="168" key="GridCell.Tab.0.center" timestamp="1596419328827">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596416259120" />
-    <state width="1343" height="168" key="GridCell.Tab.0.left" timestamp="1596416259120">
+    <state width="1343" height="168" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596419328827" />
+    <state width="1343" height="168" key="GridCell.Tab.0.left" timestamp="1596419328826">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596416259120" />
-    <state width="1343" height="168" key="GridCell.Tab.0.right" timestamp="1596416259120">
+    <state width="1343" height="168" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596419328826" />
+    <state width="1343" height="168" key="GridCell.Tab.0.right" timestamp="1596419328829">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="168" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596416259120" />
-    <state width="1343" height="214" key="GridCell.Tab.1.bottom" timestamp="1596413588808">
+    <state width="1343" height="168" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596419328829" />
+    <state width="1343" height="214" key="GridCell.Tab.1.bottom" timestamp="1596419211014">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
-    <state width="1343" height="214" key="GridCell.Tab.1.center" timestamp="1596413588808">
+    <state width="1343" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596419211014" />
+    <state width="1343" height="214" key="GridCell.Tab.1.center" timestamp="1596419211013">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
-    <state width="1343" height="214" key="GridCell.Tab.1.left" timestamp="1596413588808">
+    <state width="1343" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596419211013" />
+    <state width="1343" height="214" key="GridCell.Tab.1.left" timestamp="1596419211012">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
-    <state width="1343" height="214" key="GridCell.Tab.1.right" timestamp="1596413588808">
+    <state width="1343" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596419211012" />
+    <state width="1343" height="214" key="GridCell.Tab.1.right" timestamp="1596419211013">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
+    <state width="1343" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596419211013" />
     <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596410817518">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -562,5 +571,21 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1593102421533" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Final_Exam/nonGUIdriver.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Final_Exam/test_Battleships.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,6 +2,21 @@
 Author: Evan
 Date: 7-24 -- 8-2
 Purpose: Final Project, A game of battleships
+
+In Depth Walkthrough (README)
+
+This is a modular, object-oriented battleships game.  The primary piece is the Gameboard, a 2D array of Ship objects.
+A Ship object is an all-encompassing container for either empty ocean, or the 5 different types of ships
+0 -- ocean
+1 -- shuttle
+2 -- destroyer
+3 -- frigate
+4 -- carrier
+5 -- battleship
+The Ship object has various stats associated with it (damaged, sunk, which direction it is facing)
+The Primary gameloop consists of the player inputting sizes for the gameboard, and the program --
+populating the board accordingly.
+This can be played with or without the GUI.
 """
 import tkinter as tk
 from random import randint
@@ -10,16 +25,19 @@ from random import randint
 class Gameboard:
 
     def __init__(self, x_size=10, y_size=10):  # defines gameworld made up of gridded segments.
-        if x_size < 0 or x_size > 30:
+        if x_size < 6 or x_size > 30:
             raise ValueError("bounds too high/low")
-        if y_size < 0 or y_size > 30:
+
+        if y_size < 6 or y_size > 30:
             raise ValueError("bounds too high/low")
+
         self.x = x_size
         self.y = y_size
 
         self.world = [[Ship(0, Position(j, i, self.y, self.x), 0) for j in range(self.y)] for i in range(self.x)]
 
         self.populated = 0  # whether a board has been 'made' yet; 0 for no, 1 for yes
+        self.over = 0
 
     def __str__(self):
         for i in range(0, self.x):
@@ -89,13 +107,13 @@ class Gameboard:
                     board.world[randy][randx + 1] = Ship(2, Position(randx + 1, randy, board.x, board.y), 1)
                     journal["destroyer"] = 1
                 else:
+                    randx = randint(0, board.x - 1)
+                    randy = randint(0, board.y - 1)
                     if randx + 1 >= board.x - 1 or randy >= board.y:  # destroyer
                         continue
                     for i in range(0, 1):
                         if not check_occupied(i, randx):
                             continue
-                    randx = randint(0, board.x - 1)
-                    randy = randint(0, board.y - 1)
                     board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 2)
                     board.world[randy + 1][randx] = Ship(2, Position(randx, randy + 1, board.x, board.y), 2)
                     journal["destroyer"] = 1
@@ -198,11 +216,19 @@ class Gameboard:
         """
 
     def fire(self, Ship):
+        try:
+            b = Ship
+        except ValueError:
+            print("Bad input, try again")
+            return
+
         if Ship.getclass() == 0:  # ocean targeted
+            print("You Missed!\n")
             return
             # print GUI you missed
         if Ship.is_sunk() == 0:
             Ship.is_hit(1)  # impact
+            print("You Hit!\n")
             if Ship.isfacing() == 1:  # horizontal
                 token = 0
                 for i in range(0, self.x):
@@ -225,6 +251,18 @@ class Gameboard:
                         self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i + 1)].sink()
 
         # print GUI you hit!
+    def gameover(self): # checks for all ships sunk, if so gameover
+        token = 0
+        for j in range(0, self.y):
+            for i in range(0, self.x):
+                for k in range(1, 5):
+                    if self.world[j][i].is_sunk() == 1:
+                        token +=1
+        if token == 5:
+            self.over = 1
+            return 1
+        else:
+            return -1
 
     def findship(self, gb, num):
         journ = []
@@ -341,33 +379,24 @@ class Ship:
         else:
             raise ValueError("Invalid Input")
 
-    def is_sunk(self):
+    def is_sunk(self): # 1 for sunk, 0 for not
         return self.sunk
 
-    def getclass(self):
+    def getclass(self): #explained above
         return self.ShipClass
 
-    def getposition(self):
+    def getposition(self): #returns position object
         return self.position
 
-    def isfacing(self):
+    def isfacing(self): # returns direction ship is facing
         return self.facing
 
-    def setworld(self, world):
+    def setworld(self, world): # #largely superfluous
         self.world = world
 
-    def setclass(self, i):
+    def setclass(self, i): # change class on ship object
         if i < 0 or i > 5:
             raise ValueError("Bad Input")
         self.ShipClass = i
-
-
-w = Gameboard(10, 10)
-Gameboard.populate(w)
-l = []
-for i in range(0, w.x):
-    for j in range(0, w.y):
-        w.fire(w.world[j][i])
-        print("{}...{}".format(w.world[j][i].getclass(), w.world[j][i].is_sunk()))
 
 

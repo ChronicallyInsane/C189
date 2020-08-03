@@ -9,9 +9,10 @@ class TestB(ut.TestCase):
         l = []
         l = b.findship(b, 1)  # find shuttle class ship, returns list of coords
         for i in range(0, len(l), 2):
-            b.fire(b.world[i][i + 1])
-        for i in range(0, len(l), 2):
-            self.assertEqual(b.world[i][i + 1].is_sunk(), 1)  # passes intermittently, based on rand -- quite vexing
+            b.fire(b.world[l[i]][l[i + 1]])
+        x = l[0]
+        y = l[1]
+        self.assertEqual(b.world[l[0]][l[1]].is_sunk(), 1)  # passes intermittently, based on rand -- quite vexing
 
     def test_b(self):
         b = Final_Exam.gameClass.Gameboard(10, 10)  # populates a grid of size 10 x 10
