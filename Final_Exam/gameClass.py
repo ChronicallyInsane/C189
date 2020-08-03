@@ -234,12 +234,17 @@ class Gameboard:
                     journ.append(j)
                     journ.append(i)
         return journ
-
+    def replaceship(self, gb, num, pos):
+        if num < 0 or num > 5 or pos.x < 0 or pos.y < 0:
+            raise ValueError("Bad input")
+        for j in range(0, gb.y - 1):
+            for i in range(0, gb.x - 1):
+                if self.world[j][i].ShipClass == num:
 
 class Position:  # x, y coordinate  size is array bounds, non-square boards out of scope of project.
     def __init__(self, x, y, xmax, ymax):
-        if x > xmax or y > ymax or x < 0 or y < 0:
-            raise IndexError("out of range:{}, {}\n".format(self.xmax, self.ymax))
+        if x > xmax or y > ymax or x < 0 or y < 0 or xmax < 0 or ymax < 0:
+            raise IndexError("out of range:{}, {}\n".format(xmax, ymax))
 
         self.x = x
         self.y = y
