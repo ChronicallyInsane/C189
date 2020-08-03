@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bf30-004b-4485-a7a8-9a18c0d2f151" name="Default Changelist" comment="Employee M11">
-      <change afterPath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/GUIDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/GUIDriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final_Exam/gameClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/gameClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Exam/test_Battleships.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="$PROJECT_DIR$/Module10/class_definitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gameClass">
+  <component name="RunManager" selected="Python tests.Unittests in test_Battleships.py">
     <configuration name="GUIDriver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,27 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="employee (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="C189" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Module11" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Module11/employee.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="gameClass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C189" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,13 +154,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_Battleships.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="C189" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final_Exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Final_Exam/test_Battleships.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gameClass" />
+        <item itemvalue="Python tests.Unittests in test_Battleships.py" />
         <item itemvalue="Python.GUIDriver" />
+        <item itemvalue="Python.gameClass" />
         <item itemvalue="Python.GUIvis" />
         <item itemvalue="Python.Manager" />
-        <item itemvalue="Python.employee (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596398697692</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Employee M11">
+      <created>1596401338917</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1596401338917</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,42 +494,42 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1593027555448" />
-    <state width="1343" height="169" key="GridCell.Tab.0.bottom" timestamp="1596401327755">
+    <state width="1343" height="168" key="GridCell.Tab.0.bottom" timestamp="1596413860557">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="169" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596401327755" />
-    <state width="1343" height="169" key="GridCell.Tab.0.center" timestamp="1596401327754">
+    <state width="1343" height="168" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596413860557" />
+    <state width="1343" height="168" key="GridCell.Tab.0.center" timestamp="1596413860556">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="169" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596401327754" />
-    <state width="1343" height="169" key="GridCell.Tab.0.left" timestamp="1596401327753">
+    <state width="1343" height="168" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1596413860556" />
+    <state width="1343" height="168" key="GridCell.Tab.0.left" timestamp="1596413860556">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="169" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596401327753" />
-    <state width="1343" height="169" key="GridCell.Tab.0.right" timestamp="1596401327755">
+    <state width="1343" height="168" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1596413860556" />
+    <state width="1343" height="168" key="GridCell.Tab.0.right" timestamp="1596413860557">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1343" height="169" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596401327755" />
-    <state width="1315" height="214" key="GridCell.Tab.1.bottom" timestamp="1596392965375">
+    <state width="1343" height="168" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1596413860557" />
+    <state width="1343" height="214" key="GridCell.Tab.1.bottom" timestamp="1596413588808">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1315" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596392965375" />
-    <state width="1315" height="214" key="GridCell.Tab.1.center" timestamp="1596392965374">
+    <state width="1343" height="214" key="GridCell.Tab.1.bottom/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
+    <state width="1343" height="214" key="GridCell.Tab.1.center" timestamp="1596413588808">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1315" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596392965374" />
-    <state width="1315" height="214" key="GridCell.Tab.1.left" timestamp="1596392965374">
+    <state width="1343" height="214" key="GridCell.Tab.1.center/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
+    <state width="1343" height="214" key="GridCell.Tab.1.left" timestamp="1596413588808">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1315" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596392965374" />
-    <state width="1315" height="214" key="GridCell.Tab.1.right" timestamp="1596392965375">
+    <state width="1343" height="214" key="GridCell.Tab.1.left/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
+    <state width="1343" height="214" key="GridCell.Tab.1.right" timestamp="1596413588808">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="1315" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596392965375" />
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595609657397">
+    <state width="1343" height="214" key="GridCell.Tab.1.right/0.0.1366.731@0.0.1366.731" timestamp="1596413588808" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596410817518">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1595609657397" />
+    <state x="278" y="102" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1596410817518" />
     <state x="476" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596397319291">
       <screen x="0" y="0" width="1366" height="731" />
     </state>

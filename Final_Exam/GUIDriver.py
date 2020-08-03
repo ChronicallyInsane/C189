@@ -3,8 +3,9 @@ import Final_Exam.gameClass as BS
 
 
 def main():
-    def pressed(i):
-        pass
+    def pressed(i, j):
+        selection = i
+        butlist[i][j]["state"]=tk.DISABLED
 
     def start(i):
         for button in butlist:
@@ -32,7 +33,7 @@ def main():
     end[0].grid(row=16, column=0)
     for j in range(0, game.y):
         for i in range(0, game.x):
-            button = tk.Button(Window, text=0, command=lambda index=i: pressed(index))
+            button = tk.Button(Window, text=0, command=lambda index=i: pressed(index, j))
             butlist[j][i] = button
 
     for j in range(0, game.y):

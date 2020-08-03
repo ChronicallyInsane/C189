@@ -22,7 +22,13 @@ class Gameboard:
         self.populated = 0  # whether a board has been 'made' yet; 0 for no, 1 for yes
 
     def __str__(self):
-        return "Gameboard({}, {})".format(self.x, self.y)
+        for i in range(0, self.x):
+            for j in range(0, self.y):
+                print("{}, {}, {], {}".format(self.world[j][i].getclass(), self.world[j][i].position, self.world[j][i].
+                                              isfacing(), self.ispopulated()))
+
+    def __repr__(self):
+        print("Gameboard({}, {})".format(self.x, self.y))
 
     def ispopulated(self):
         return self.populated
@@ -50,8 +56,8 @@ class Gameboard:
                 if k == 5:
                     board.populated = 1
 
-            randx = randint(0, board.x-1)  # random placement of ships
-            randy = randint(0, board.y-1)
+            randx = randint(0, board.x - 1)  # random placement of ships
+            randy = randint(0, board.y - 1)
             if journal["shuttle"] == 0:  # checks if ship type has been built
                 if randint(1, 2) == 1:  # horizontal or vertical
                     if randx or randy > board.x - 1:  # shuttle
@@ -86,8 +92,8 @@ class Gameboard:
                     for i in range(0, 1):
                         if not check_occupied(i, randx):
                             continue
-                    randx = randint(0, board.x-1)
-                    randy = randint(0, board.y-1)
+                    randx = randint(0, board.x - 1)
+                    randy = randint(0, board.y - 1)
                     board.world[randy][randx] = Ship(2, Position(randx, randy, board.x, board.y), 2)
                     board.world[randy + 1][randx] = Ship(2, Position(randx, randy + 1, board.x, board.y), 2)
                     journal["destroyer"] = 1
@@ -195,7 +201,7 @@ class Gameboard:
             # print GUI you missed
         if Ship.is_sunk() == 0:
             Ship.is_hit(1)  # impact
-            if Ship.isfacing() == 1:
+            if Ship.isfacing() == 1:# horizontal
                 token = 0
                 for i in range(0, self.x):
                     if self.world[Ship.position.y][i].hit() == 1:
@@ -217,6 +223,17 @@ class Gameboard:
                         self.world[Ship.position.getjournal(i)][Ship.position.getjournal(i + 1)].sink()
 
         # print GUI you hit!
+
+    def findship(self, gb, num):
+        journ = []
+        if num < 0 or num > 5:
+            raise ValueError("Bad input")
+        for j in range(0, gb.y - 1):
+            for i in range(0, gb.x - 1):
+                if self.world[j][i].ShipClass == num:
+                    journ.append(j)
+                    journ.append(i)
+        return journ
 
 
 class Position:  # x, y coordinate  size is array bounds, non-square boards out of scope of project.
@@ -300,10 +317,20 @@ class Ship:
         self.world = world
 
 
+"""
 w = Gameboard(10, 10)
 Gameboard.populate(w)
+l = []
 for i in range(0, w.x):
     for j in range(0, w.y):
+
         w.fire(w.world[j][i])
         print("{}...{}".format(w.world[j][i].getclass(), w.world[j][i].is_sunk()))
 
+
+        l = b.findship(b, 1)  # find shuttle class ship, returns list of coords
+        for i in range(0, len(l), 2):
+            b.fire(b.world[i][i+1])
+        for i in range(0, len(l), 2):
+            self.assertEqual(b.world[i][i+1].is_sunk(), 1)
+"""
